@@ -21,7 +21,7 @@ definitions:
           description: 'List of chemical precursors used (e.g., Nitrates, Oxides).'
           m_annotations:
             eln:
-              component: TagEditQuantity
+              component: StringEditQuantity
         total_mass:
           type: np.float64
           unit: g
