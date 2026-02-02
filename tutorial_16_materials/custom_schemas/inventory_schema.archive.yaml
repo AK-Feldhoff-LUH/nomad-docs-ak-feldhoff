@@ -1,0 +1,31 @@
+definitions:
+  name: 'Inventory Schema'
+  sections:
+    Instrument:
+      base_sections:
+        - nomad.datamodel.metainfo.eln.Instrument
+        - nomad.datamodel.data.EntryData
+      description: |
+        A schema for defining laboratory instruments to be referenced by experiments.
+      
+      quantities:
+        manufacturer:
+          type: str
+          description: The manufacturer of the instrument (e.g. JEOL, Bruker).
+          m_annotations:
+            eln:
+              component: StringEditQuantity
+        
+        model:
+          type: str
+          description: The specific model name (e.g. JSM-7610F Plus).
+          m_annotations:
+            eln:
+              component: StringEditQuantity
+              
+        serial_number:
+          type: str
+          description: The serial number for asset tracking.
+          m_annotations:
+            eln:
+              component: StringEditQuantity
