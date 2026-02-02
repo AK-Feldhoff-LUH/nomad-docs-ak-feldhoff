@@ -10,7 +10,7 @@ definitions:
       quantities:
         lab_id:
           type: str
-          [cite_start]description: 'The Sample ID (e.g., HeOx-1).'
+          description: 'The Sample ID (e.g., HeOx-1).'
           m_annotations:
             eln:
               component: StringEditQuantity
@@ -18,14 +18,14 @@ definitions:
         precursors:
           type: str
           shape: ['*']
-          [cite_start]description: 'List of chemical precursors used (e.g., Nitrates, Oxides)[cite: 13].'
+          description: 'List of chemical precursors used (e.g., Nitrates, Oxides).'
           m_annotations:
             eln:
               component: TagEditQuantity
         total_mass:
           type: np.float64
           unit: g
-          [cite_start]description: 'The measured mass of the synthesized powder.'
+          description: 'The measured mass of the synthesized powder.'
           m_annotations:
             eln:
               component: NumberEditQuantity
