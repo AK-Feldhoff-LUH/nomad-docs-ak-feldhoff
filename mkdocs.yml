@@ -9,6 +9,7 @@ nav:
   - Home: index.md
   - Tutorials:
     - Sol-gel Synthesis: synthesis.md
+    - Sintering: processing.md
   # - Overview: index.md
   # - Contents:
   # - Search and Filter: T16_1/T16_1_search_and_filter.md
