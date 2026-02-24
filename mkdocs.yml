@@ -8,9 +8,12 @@ edit_uri: ""
 nav:
   - Home: index.md
   - Tutorials:
-    - Sol-gel Synthesis: synthesis.md
-    - Sintering: processing.md
-    - Inventory: inventory.md
+    - 1. Experiment & Substance: 01_experiment_substance.md
+    - 2. Sol-Gel Synthesis: 02_sol_gel_synthesis.md
+    - 3. Sintering Process: 03_sintering_process.md
+    - 4. Instrument Inventory: 04_inventory.md
+    - 5. XRD & SEM Characterization: 05_characterization.md
+    - 6. Finding Your Data: 06_finding_data.md
   # - Overview: index.md
   # - Contents:
   # - Search and Filter: T16_1/T16_1_search_and_filter.md
