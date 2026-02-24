@@ -4,6 +4,7 @@ Before we can document our characterization experiments, we need to register the
 
 ## The Schema
 We use a custom `Instrument` schema that records:
+
 * **Manufacturer**: Who made the device (e.g., JEOL).
 * **Model**: The specific device model.
 * **Serial Number**: For unique identification.

@@ -17,4 +17,4 @@ Since we created a custom schema for the Sintering process, you can even search 
 * Try searching for a specific **Temperature range** to find all samples sintered between, for example, 800 °C and 1000 °C.
 
 ## The "FAIR" Payoff
-If we had simply uploaded a folder of `.RAW` and `.BMP` files with no metadata, we could only search by file name (Free text). By taking the time to build a workflow graph (**Substance $\rightarrow$ Process $\rightarrow$ Measurement $\rightarrow$ Instrument**), our data is now fully AI-ready and FAIR (Findable, Accessible, Interoperable, and Reusable).
+If we had simply uploaded a folder of `.RAW` and `.BMP` files with no metadata, we could only search by file name (Free text). By taking the time to build a workflow graph (**Substance → Process → Measurement → Instrument**), our data is now fully AI-ready and FAIR (Findable, Accessible, Interoperable, and Reusable).
