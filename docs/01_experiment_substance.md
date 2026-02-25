@@ -16,7 +16,8 @@ The `Experiment` entry acts as the central hub. It doesn't contain the raw data 
     - **Description:** A brief overview of the project goals.
 5. Click **Save** (the floppy disk icon). 
 
-> **Note:** We will return to this Experiment entry later. As we complete the Sol-Gel synthesis, Sintering, and SEM/XRD steps, we will link them all back to this central hub!
+!!! info "Looking Ahead"
+    We will return to this Experiment entry later. As we complete the Sol-Gel synthesis, Sintering, and SEM/XRD steps, we will link them all back to this central hub!
 
 ## 2. Create a Substance Entry (The Material Identity)
 
@@ -29,4 +30,5 @@ Before we describe *how* we made a material, we must define *what* the material 
     - **Description:** (Enter the target stoichiometry, e.g., `La0.5Pr...`)
 4. Click **Save**.
 
-> **Why a Substance Entry?** By separating the *Substance* (the identity) from the *Process* (the synthesis), we avoid duplicating chemical information. If you run five different sintering tests on the exact same powder, they all simply link back to this single Substance entry.
+!!! tip "Why a Substance Entry?"
+    By separating the *Substance* (the identity) from the *Process* (the synthesis), we avoid duplicating chemical information. If you run five different sintering tests on the exact same powder, they all simply link back to this single Substance entry.
