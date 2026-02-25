@@ -1,0 +1,31 @@
+definitions:
+  name: 'Sol-gel Synthesis Schema'
+  sections:
+    SolGelPowder:
+      base_sections:
+        - nomad.datamodel.metainfo.eln.Sample
+        - nomad.datamodel.data.EntryData
+      description: |
+        Schema for the sol-gel synthesis of powder samples like HeOx-1.
+      quantities:
+        lab_id:
+          type: str
+          description: 'The Sample ID (e.g., HeOx-1).'
+          m_annotations:
+            eln:
+              component: StringEditQuantity
+              label: Sample ID
+        precursors:
+          type: str
+          shape: ['*']
+          description: 'List of chemical precursors used (e.g., Nitrates, Oxides).'
+          m_annotations:
+            eln:
+              component: StringEditQuantity
+        total_mass:
+          type: np.float64
+          unit: g
+          description: 'The measured mass of the synthesized powder.'
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
