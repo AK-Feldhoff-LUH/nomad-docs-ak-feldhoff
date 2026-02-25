@@ -16,5 +16,5 @@ A **Substance** entry acts as the fundamental chemical identity that can be reus
 
 1. Go back to your Upload overview and click **CREATE FROM SCHEMA**.
 2. Select the built-in **Substance ELN** schema.
-3. Name it `HeOx-1 Powder` and provide its target stoichiometry. Click **Save**.
+3. Name it and provide its target stoichiometry. Click **Save**.
 

@@ -15,17 +15,27 @@ definitions:
             eln:
               component: StringEditQuantity
               label: Sample ID
-        precursors:
-          type: str
-          shape: ['*']
-          description: 'List of chemical precursors used (e.g., Nitrates, Oxides).'
+        
+        water_volume:
+          type: np.float64
+          unit: ml
+          description: 'Volume of water used in the initial heating step.'
           m_annotations:
             eln:
-              component: StringEditQuantity
-        total_mass:
+              component: NumberEditQuantity
+              
+        calcination_temperature:
           type: np.float64
-          unit: g
-          description: 'The measured mass of the synthesized powder.'
+          unit: degC
+          description: 'Temperature used during the final calcination step.'
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
+              
+        calcination_time:
+          type: np.float64
+          unit: hour
+          description: 'Duration of the final calcination step.'
           m_annotations:
             eln:
               component: NumberEditQuantity
