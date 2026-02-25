@@ -1,45 +1,34 @@
 definitions:
   name: 'Sintering Schema'
   sections:
-    Sintering:
+    SinteringProcess:
       base_sections:
-        - nomad.datamodel.metainfo.eln.Process
+        - nomad.datamodel.metainfo.basesections.Process
         - nomad.datamodel.data.EntryData
       description: |
         Schema for the Sintering Process.
-        Note: Automatic parsing is currently disabled due to unstructured Excel format.
       
       quantities:
-        # 1. Link to the Sol-Gel Sample (HeOx-1)
-        input_sample:
-          type: nomad.datamodel.metainfo.eln.Sample
-          description: Link to the material used.
-          m_annotations:
-            eln:
-              component: ReferenceEditQuantity
-              label: Input Material Sample
-
-        # 2. File Upload
-        data_file:
-          type: str
-          description: Upload the parameter file here.
-          m_annotations:
-            eln:
-              component: FileEditQuantity
-
-        # 3. Manual Data Entry (Since we can't parse yet)
-        temperature:
+        final_temperature:
           type: np.float64
           unit: degC
-          description: Max temperature (manually extracted).
+          description: Max temperature extracted from the Excel file.
           m_annotations:
             eln:
               component: NumberEditQuantity
         
-        duration:
+        dwell_time:
           type: np.float64
           unit: minute
-          description: Dwell time (manually extracted).
+          description: Dwell time extracted from the Excel file.
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
+
+        applied_pressure:
+          type: np.float64
+          unit: MPa
+          description: Applied pressure during sintering.
           m_annotations:
             eln:
               component: NumberEditQuantity

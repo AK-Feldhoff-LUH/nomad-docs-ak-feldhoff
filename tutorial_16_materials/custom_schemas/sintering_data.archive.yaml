@@ -1,0 +1,5 @@
+data:
+  m_def: sintering_schema.archive.yaml#/definitions/sections/SinteringProcess
+  final_temperature: 900
+  dwell_time: 15
+  applied_pressure: 50
