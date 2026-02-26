@@ -1,16 +1,16 @@
 definitions:
   name: 'Sol-gel Synthesis Schema'
   sections:
-    SolGelPowder:
+    SolGelSynthesis:
       base_sections:
-        - nomad.datamodel.metainfo.eln.Sample
+        - nomad.datamodel.metainfo.basesections.Process
         - nomad.datamodel.data.EntryData
       description: |
-        Schema for the sol-gel synthesis of powder samples like HeOx-1.
+        Schema for the sol-gel synthesis process.
       quantities:
         lab_id:
           type: str
-          description: 'The Sample ID (e.g., HeOx-1).'
+          description: 'The Sample ID (e.g., HeOx-1) resulting from this synthesis.'
           m_annotations:
             eln:
               component: StringEditQuantity

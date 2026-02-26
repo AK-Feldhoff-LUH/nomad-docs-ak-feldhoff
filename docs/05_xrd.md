@@ -13,5 +13,5 @@ NOMAD will automatically recognize the `.RAW` extension and trigger the built-in
 ## 3. Linking the Data 
 To ensure FAIR tracking, we must link this measurement to our physical sample and the broader experiment.
 
-* **Sample Reference:** Locate the `Sample` reference field and select the **HeOx-1** Substance.
+* **Sample Reference:** Locate the `Sample` reference field and select the **Substance**.
 * **Experiment Reference:** Navigate back to your overarching **Experiment ELN** and link this XRD Characterization entry to the project graph.
