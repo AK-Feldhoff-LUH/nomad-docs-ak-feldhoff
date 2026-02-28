@@ -8,7 +8,7 @@ Now, we transform liquid precursors into a solid powder. Accurate documentation 
 
 ## Workflow: Manual GUI Entry
 1. **Upload the custom schema file**:
-    * Upload `synthesis_schema.archive.yaml` to your upload.
+    * On the **Your uploads** page, upload `synthesis_schema.archive.yaml` to your working upload.
     * In practice, this schema can be uploaded and published once, then reused for future syntheses.
 2. **Create from custom schema**:
     * Click **CREATE FROM SCHEMA**.

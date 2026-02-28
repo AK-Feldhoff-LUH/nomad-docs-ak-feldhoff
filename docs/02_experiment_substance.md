@@ -5,7 +5,7 @@ In NOMAD, data is best organized as an interconnected graph. Before documenting 
 ## 1. Create the Experiment ELN entry
 The Experiment entry collects references to all process and measurement steps that belong to the same study.
 
-1. Navigate to the **Uploads** page and open your current upload.
+1. On the **Your uploads** page, open your current upload.
 2. Click the **CREATE FROM SCHEMA** button.
 3. Select the built-in **Experiment ELN** schema.
 4. Give it a clear title, e.g. `Synthesis and Characterization of HeOx-1 Ceramic`.

@@ -3,7 +3,7 @@
 Once our ceramic is sintered, we characterize its phase composition using X-Ray Diffraction (XRD). In this step, we use NOMAD's automated parsers to extract data directly from the raw instrument files.
 
 ## 1. Uploading Raw Data
-Navigate to your Upload overview. Upload the Bruker `.RAW` file by dragging and dropping it into the NOMAD upload box.
+On the **Your uploads** page, upload the Bruker `.RAW` file by dragging and dropping it into your working upload.
 
 [⬇️ Download Example XRD .RAW File](assets/TwoTheta_scan_scrambled.raw){ .md-button .nomad-button .md-button--primary }
 

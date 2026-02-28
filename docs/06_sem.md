@@ -3,7 +3,7 @@
 Next, we characterize the microstructure of our sintered ceramic using Scanning Electron Microscopy (SEM). 
 
 ## 1. Uploading Raw Data
-Navigate to your Upload overview. For this step, upload the JEOL `.TXT` and `.BMP` file pair.
+On the **Your uploads** page, upload the JEOL `.TXT` and `.BMP` file pair to your working upload.
 
 [⬇️ Download SEM metadata .TXT File](assets/HeOx-1004-sg-sps-900C-15min-polished-01.txt){ .md-button .nomad-button .md-button--primary }
 [⬇️ Download SEM image .BMP File](assets/HeOx-1004-sg-sps-900C-15min-polished-01.bmp){ .md-button .nomad-button .md-button--primary }

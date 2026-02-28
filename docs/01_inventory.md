@@ -4,7 +4,8 @@ Before documenting experiments and measurements, register your lab instruments a
 
 ## Instructions
 1. **Create the Instrument ELN entry**:
-   * In your upload, click **CREATE FROM SCHEMA**.
+   * Open the **Your uploads** page (`Publish` > `Uploads`) and open your working upload.
+   * Click **CREATE FROM SCHEMA**.
    * Select the built-in **Instrument ELN** schema.
    * Give the entry a clear name, e.g. `JEOL-SEM-01`.
    * After creation, NOMAD opens the entry directly in the **DATA** tab.

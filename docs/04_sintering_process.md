@@ -15,7 +15,7 @@ Download these three files to see how it works:
 [⬇️ Download sintering.parameters.xlsx](assets/sintering.parameters.xlsx){ .md-button .nomad-button }
 
 ## Workflow: Data Instantiation
-1. **Upload the Files:** Drag and drop all three downloaded files (`sintering_schema.archive.yaml`, `sintering_data.archive.yaml`, and the `.xlsx` file) directly into your NOMAD upload space.
+1. **Upload the Files:** On the **Your uploads** page, drag and drop all three downloaded files (`sintering_schema.archive.yaml`, `sintering_data.archive.yaml`, and the `.xlsx` file) into your working upload.
 2. **Open the generated entry (OVERVIEW):**
     * Click `sintering_data.archive.yaml` in your upload.
     * On the **OVERVIEW** page, confirm that NOMAD recognized the method as `SinteringProcess` and created the corresponding entry.
