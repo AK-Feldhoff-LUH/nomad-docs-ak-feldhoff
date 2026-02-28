@@ -10,7 +10,7 @@ nav:
   - Tutorials:
     - I. Creating Inventory: 01_inventory.md
     - II. Documenting Experiment:
-      - Experiment & Substance: 02_experiment_substance.md
+      - Experiment Setup: 02_experiment_substance.md
       - a. Sol-Gel Synthesis: 03_sol_gel_synthesis.md
       - b. Sintering Process: 04_sintering_process.md
       - c. XRD Characterization: 05_xrd.md

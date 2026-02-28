@@ -1,4 +1,4 @@
-In NOMAD, data is best organized as an interconnected graph. Before we document the synthesis parameters, we must set up our **Experiment** (the umbrella linking all steps) and our **Substance** (the chemical identity).
+In NOMAD, data is best organized as an interconnected graph. Before we document synthesis and characterization details, we set up an **Experiment** entry that acts as the umbrella linking all steps.
 
 ## 1. Create the Experiment Entry (The "Umbrella")
 The `Experiment` entry acts as the central hub. It collects references to all the individual steps in your workflow.
@@ -10,11 +10,4 @@ The `Experiment` entry acts as the central hub. It collects references to all th
 
 !!! tip "Looking Ahead"
     As we complete the Sol-Gel synthesis, Sintering, and Characterization steps, we will link them all back to this central hub!
-
-## 2. Create a Substance Entry (The Material Identity)
-A **Substance** entry acts as the fundamental chemical identity that can be reused across multiple different physical samples.
-
-1. Go back to your Upload overview and click **CREATE FROM SCHEMA**.
-2. Select the built-in **Substance ELN** schema.
-3. Name it and provide its target stoichiometry. Click **Save**.
 
