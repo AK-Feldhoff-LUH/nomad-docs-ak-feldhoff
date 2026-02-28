@@ -37,6 +37,15 @@ Then combine filters, for example:
 * `results.eln.sections=SinteringProcess` + `results.eln.names=sintering data`
 * `results.eln.sections=ELNInstrument` + `results.eln.names=JEOL-SEM-01`
 
+You can also search with high-level metadata, for example:
+* `authors.name=Markus Scheidgen`
+* `entry_name=sintering_data.archive.yaml`
+* `mainfile=sintering_data.archive.yaml`
+* `upload_id=...` (copy from entry metadata on OVERVIEW)
+* `entry_create_time>=2026-02-01` (date/range style queries)
+
+Use autocomplete to confirm the exact quantity names available in your deployment.
+
 For custom schema quantities, use autocomplete to find the exact indexed path in your deployment, then filter by value (for example sintering temperature or pressure fields).
 
 ## 4. Notes on Apps and Customization
