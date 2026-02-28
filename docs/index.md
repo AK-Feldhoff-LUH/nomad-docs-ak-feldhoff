@@ -1,6 +1,6 @@
-# Tutorial: User Basics&mdash;Getting started with NOMAD for research data management
+# Tutorial: Sol-Gel Synthesis and Characterization Workflow in NOMAD
 
-In this tutorial, you'll learn how to use **NOMAD** to manage and organize your research data. Whether you are working with computational or experimental data, NOMAD's graphical user interface makes it easy to upload, share, explore, and analyze your data. We will also focus on using NOMAD to improve collaboration on your research projects and to ensure that your data align with the FAIR data principles (Findable, Accessible, Interoperable, and Reusable).
+This tutorial walks through a complete **HeOx ceramic** workflow in NOMAD, from process documentation to measurement provenance. You will create an experiment hub, document synthesis and sintering with structured ELN schemas, and connect parsed XRD/SEM data to the same workflow graph.
 
 ## What you'll do:
 
@@ -11,11 +11,11 @@ In this tutorial, you'll learn how to use **NOMAD** to manage and organize your 
 - 🔎 [**Search and filter your results**](07_finding_data.md) using structured metadata.
 
 ## At the end of this tutorial, you will be able to:
-- Efficiently **search, filter, and explore data** in NOMAD.
-- Manage, upload, and share your research data using NOMAD.
-- Publish your datasets with DOIs to ensure **accessibility and reusability**.
-- Use the **NOMAD ELN functionality** to document your research.
-- Understand the essentials of creating custom templates and parsers for your research data.
+- Create and maintain an **Experiment-centered ELN graph** across process and measurement entries.
+- Capture synthesis inputs via repeatable **reagents** and key process variables in a custom schema.
+- Use both **manual GUI entry** and **data-instantiated schema entries**.
+- Preserve provenance by linking **raw files**, **parsed metadata**, **sample context**, and **instrument records**.
+- Efficiently **search and filter** entries using methods, ELN sections, materials, and instrument metadata.
 
 ## ⚙️ Tutorial Preparation
 
