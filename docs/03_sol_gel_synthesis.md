@@ -2,8 +2,8 @@
 
 Now, we transform liquid precursors into a solid powder. Accurate documentation here is critical for reproducibility. For this step, we use the NOMAD graphical user interface (GUI) with a custom schema and fill it from the provided spreadsheet.
 
-[⬇️ Download synthesis_schema.archive.yaml](assets/synthesis_schema.archive.yaml){ .md-button .md-button--primary }
-[⬇️ Download HeOx-1-sg-synthesis.xlsx](assets/HeOx-1-sg-synthesis.xlsx){ .md-button .md-button--primary }
+[⬇️ Download synthesis_schema.archive.yaml](assets/synthesis_schema.archive.yaml){ .md-button .nomad-button .md-button--primary }
+[⬇️ Download HeOx-1-sg-synthesis.xlsx](assets/HeOx-1-sg-synthesis.xlsx){ .md-button .nomad-button .md-button--primary }
 
 ## Workflow: Manual GUI Entry
 1. **Upload the Schema**: Ensure `synthesis_schema.archive.yaml` is uploaded to your workspace.

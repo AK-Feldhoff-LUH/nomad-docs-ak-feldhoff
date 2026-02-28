@@ -8,9 +8,9 @@ Instead of manually typing values into the graphical interface like we did for t
 In NOMAD, a schema is just a blank template. You can create a separate file that contains your actual data and tells NOMAD *which* template to use via an `m_def` (meta-definition) pointer.
 
 Download these three files to see how it works:
-[⬇️ Download sintering_schema.archive.yaml](assets/sintering_schema.archive.yaml){ .md-button .md-button--primary }
-[⬇️ Download sintering_data.archive.yaml](assets/sintering_data.archive.yaml){ .md-button .md-button--primary }
-[⬇️ Download sintering.parameters.xlsx](assets/sintering.parameters.xlsx){ .md-button }
+[⬇️ Download sintering_schema.archive.yaml](assets/sintering_schema.archive.yaml){ .md-button .nomad-button .md-button--primary }
+[⬇️ Download sintering_data.archive.yaml](assets/sintering_data.archive.yaml){ .md-button .nomad-button .md-button--primary }
+[⬇️ Download sintering.parameters.xlsx](assets/sintering.parameters.xlsx){ .md-button .nomad-button }
 
 ## Workflow: Data Instantiation
 1. **Upload the Files:** Drag and drop all three downloaded files (`sintering_schema.archive.yaml`, `sintering_data.archive.yaml`, and the `.xlsx` file) directly into your NOMAD upload space.

@@ -19,9 +19,9 @@ This tutorial walks through a complete **HeOx ceramic** workflow in NOMAD, from 
 
 ## ⚙️ Tutorial Preparation
 
-### Create a NOMAD account at the [NOMAD Central Deployment](https://nomad-lab.eu/prod/v1/gui/search/entries){:target="\_blank"}
+### Open the Feldhoff NOMAD Oasis
 
-Click `LOGIN/REGISTER` at the top right.
+Start the tutorial by opening the [Feldhoff NOMAD Oasis](https://nomad.pci.uni-hannover.de/nomad-oasis/gui/about/information){:target="\_blank"} and logging in with your existing account.
 
 !!! warning "Attention"
-    This is a public database for sharing your research data. For day to day usage, you may want to use your institute's NOMAD Oasis Installation, depending on your group's research data management protocols.
+    This tutorial is intended for the Feldhoff group Oasis environment. If you are working in a different NOMAD deployment, adapt the upload and sharing steps to your local setup.

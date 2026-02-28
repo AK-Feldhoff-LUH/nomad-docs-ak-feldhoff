@@ -81,3 +81,26 @@
     margin-top: 0;
     font-weight: 700;
 }
+
+.nomad-button {
+    display: inline-block;
+    /* font-size: 14px; */
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 4px !important;
+    background-color: #2A4CDF;
+    color: #ffffff !important;
+    border: none !important;
+    margin: 0;
+
+    /* Additional styles from the original SCSS */
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+.nomad-button--card-action {
+    margin: 1em 0 0 0 !important;
+}

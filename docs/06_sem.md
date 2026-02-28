@@ -5,8 +5,8 @@ Next, we characterize the microstructure of our sintered ceramic using Scanning 
 ## 1. Uploading Raw Data
 Navigate to your Upload overview. For this step, upload the JEOL `.TXT` and `.BMP` file pair.
 
-[⬇️ Download SEM metadata .TXT File](assets/HeOx-1004-sg-sps-900C-15min-polished-01.txt){ .md-button .md-button--primary }
-[⬇️ Download SEM image .BMP File](assets/HeOx-1004-sg-sps-900C-15min-polished-01.bmp){ .md-button .md-button--primary }
+[⬇️ Download SEM metadata .TXT File](assets/HeOx-1004-sg-sps-900C-15min-polished-01.txt){ .md-button .nomad-button .md-button--primary }
+[⬇️ Download SEM image .BMP File](assets/HeOx-1004-sg-sps-900C-15min-polished-01.bmp){ .md-button .nomad-button .md-button--primary }
 
 ## 2. Exploring Parsed Data
 NOMAD's SEM parser will automatically pair these files together. Click on the generated entry. Notice how the image, scale bar, and magnification details are automatically extracted and visualized.
