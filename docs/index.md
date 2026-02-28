@@ -6,11 +6,11 @@ This tutorial walks through a complete **HeOx ceramic** workflow in NOMAD, from 
 
 - [**I. Creating an Instrument Inventory**](01_inventory.md)
 - **II. Documenting an Experiment**
-- [**II.a. Experiment Setup**](02_experiment_substance.md)
-- [**II.b. Sol-Gel Synthesis**](03_sol_gel_synthesis.md)
-- [**II.c. Sintering Process**](04_sintering_process.md)
-- [**II.d. XRD Characterization**](05_xrd.md)
-- [**II.e. SEM Characterization**](06_sem.md)
+    - [**a. Experiment Setup**](02_experiment_substance.md)
+    - [**b. Sol-Gel Synthesis**](03_sol_gel_synthesis.md)
+    - [**c. Sintering Process**](04_sintering_process.md)
+    - [**d. XRD Characterization**](05_xrd.md)
+    - [**e. SEM Characterization**](06_sem.md)
 - [**III. Finding Previous Experiments**](07_finding_data.md)
 
 ## At the end of this tutorial, you will be able to:
@@ -25,6 +25,3 @@ This tutorial walks through a complete **HeOx ceramic** workflow in NOMAD, from 
 ### Open the Feldhoff NOMAD Oasis
 
 Start the tutorial by opening the [Feldhoff NOMAD Oasis](https://nomad.pci.uni-hannover.de/nomad-oasis/gui/about/information){:target="\_blank"} and logging in with your existing account.
-
-!!! warning "Attention"
-    This tutorial is intended for the Feldhoff group Oasis environment. If you are working in a different NOMAD deployment, adapt the upload and sharing steps to your local setup.
