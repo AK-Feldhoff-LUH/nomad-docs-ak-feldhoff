@@ -26,7 +26,7 @@ The Experiment entry collects references to all process and measurement steps th
 
 ## 3. Use the Experiment as your workflow hub
 1. Keep this Experiment entry accessible while working on the next tutorial steps.
-2. After each new step (Sol-Gel, Sintering, XRD, SEM), return to the Experiment entry and add references to those entries.
+2. After each new step (Sol-Gel, Sintering, XRD, SEM), return to the Experiment entry (**DATA** tab), open the `steps` subsection, and add a step reference to that entry.
 3. This keeps your full provenance graph in one place.
 
 In practice (outside this tutorial), publish the Experiment entry when the workflow is complete so the final record is immutable and shareable.

@@ -13,5 +13,6 @@ NOMAD will automatically recognize the `.RAW` extension and trigger the built-in
 ## 3. Linking the Data 
 To ensure FAIR tracking, we must link this measurement to our physical sample and the broader experiment.
 
-* **Sample Reference:** If available in the parsed schema, set the `Sample` reference to your synthesized material/sample context.
-* **Experiment Reference:** Open your **Experiment ELN** and add this XRD entry to the workflow graph.
+* **Sample Reference:** In the XRD entry (**DATA** tab), set the sample link in `samples` (or `Sample`) to your synthesized material/sample context.
+* **Instrument Reference (if available):** In `instruments`, add/select the instrument used for this XRD measurement.
+* **Experiment Reference:** In your **Experiment ELN** (**DATA** tab), open `steps` and add this XRD entry as a step reference.

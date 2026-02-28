@@ -24,7 +24,10 @@ Before documenting experiments and measurements, register your lab instruments a
 5. **Save**:
     * Click the **Save** icon after editing.
 
-Now this instrument entry can be referenced in measurement entries that used this instrument (for example in SEM/XRD instrument reference fields).
+Now this instrument entry can be referenced in measurement entries that used this instrument:
+1. Open the measurement entry in the **DATA** tab.
+2. In the `instruments` subsection, add an instrument reference item.
+3. Select this instrument entry (e.g. `JEOL-SEM-01`) as the referenced instrument.
 
 In practice (outside this tutorial), you should publish instrument inventory entries so they are immutable and citable. Recommended workflow:
 

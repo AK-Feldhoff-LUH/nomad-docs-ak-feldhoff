@@ -24,7 +24,7 @@ Download these three files to see how it works:
     * Open the **DATA** tab to inspect or refine the instantiated ELN fields.
     * Save if you make any edits.
 4. **Save and Link**:
-    * Go back to your overarching **Experiment ELN** and link this step to your project graph.
+    * Go back to your **Experiment ELN** (**DATA** tab), open `steps`, and add this sintering entry as a step reference.
     * If your schema provides a sample/material reference field, link it to the corresponding synthesized material context from Sol-Gel.
 
 Keep the accompanying parameter/raw file in the upload together with schema and instantiated data, so the provenance of extracted metadata remains transparent.

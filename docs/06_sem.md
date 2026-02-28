@@ -14,6 +14,6 @@ NOMAD's SEM parser will automatically pair these files together. Click on the ge
 ## 3. Linking the Data 
 Just as with the XRD data, we must establish our provenance graph.
 
-* **Sample Reference:** If available in the parsed schema, link to your synthesized material/sample context.
-* **Instrument Reference:** Locate the `Instrument` reference field and select the **JEOL-SEM-01** entry you created in Step I (Inventory).
-* **Experiment Reference:** Add this final SEM entry to your overarching **Experiment ELN**. Your digital workflow is now complete.
+* **Sample Reference:** In the SEM entry (**DATA** tab), set the sample link in `samples` (or `Sample`) to your synthesized material/sample context.
+* **Instrument Reference:** In `instruments`, add/select the **JEOL-SEM-01** entry you created in Step I.
+* **Experiment Reference:** In your **Experiment ELN** (**DATA** tab), open `steps` and add this SEM entry as a step reference. Your digital workflow is now complete.

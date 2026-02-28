@@ -26,4 +26,4 @@ Now, we transform liquid precursors into a solid powder. Accurate documentation 
     * The **Tabelle1** tab describes the fixed protocol; you only enter its key variable parameters as quantities.
 5. **Save and Link**:
     * Save the Sol-Gel entry.
-    * Open your **Experiment ELN** entry and add a reference to this synthesis step.
+    * Open your **Experiment ELN** entry (**DATA** tab), go to `steps`, and add this Sol-Gel entry as a step reference.
