@@ -7,15 +7,14 @@ edit_uri: ""
 
 nav:
   - Home: index.md
-  - Tutorials:
-    - I. Creating Inventory: 01_inventory.md
-    - II. Documenting Experiment:
-      - Experiment Setup: 02_experiment_substance.md
-      - a. Sol-Gel Synthesis: 03_sol_gel_synthesis.md
-      - b. Sintering Process: 04_sintering_process.md
-      - c. XRD Characterization: 05_xrd.md
-      - d. SEM Characterization: 06_sem.md
-    - III. Search and Find: 07_finding_data.md
+  - I. Creating an Instrument Inventory: 01_inventory.md
+  - II. Documenting an Experiment:
+    - a. Experiment Setup: 02_experiment_substance.md
+    - b. Sol-Gel Synthesis: 03_sol_gel_synthesis.md
+    - c. Sintering Process: 04_sintering_process.md
+    - d. XRD Characterization: 05_xrd.md
+    - e. SEM Characterization: 06_sem.md
+  - III. Finding Previous Experiments: 07_finding_data.md
 
 plugins:
  - search
