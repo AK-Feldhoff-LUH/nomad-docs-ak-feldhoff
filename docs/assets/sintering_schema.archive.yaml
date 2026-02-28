@@ -12,7 +12,7 @@ definitions:
         final_temperature:
           type: np.float64
           unit: degC
-          description: Max temperature extracted from the Excel file.
+          description: Final sintering temperature.
           m_annotations:
             eln:
               component: NumberEditQuantity
@@ -20,7 +20,7 @@ definitions:
         dwell_time:
           type: np.float64
           unit: minute
-          description: Dwell time extracted from the Excel file.
+          description: Hold time at final sintering temperature.
           m_annotations:
             eln:
               component: NumberEditQuantity
