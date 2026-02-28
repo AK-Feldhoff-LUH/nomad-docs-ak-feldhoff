@@ -4,15 +4,11 @@ In this tutorial, you'll learn how to use **NOMAD** to manage and organize your 
 
 ## What you'll do:
 
-- 🌐 [**Explore NOMAD entries**](./T16_2/T16_2_explore_data_records.md) and gain insights from the rich metadata structured in NOMAD's data model.
-- 📖 [**Document your research**](./T16_6/T16_6_document_your_research.md) using NOMAD’s built-in ELN templates.
-- 📥 [**Upload raw data files**](./T16_3/T16_3_upload_raw_data_files.md) and inspect the extracted data structured in NOMAD’s data model.
-- 🗂️ [**Create a dataset**](./T16_5/T16_5_create_a_dataset.md) and simulate publishing it with a DOI.
-
-<!-- **Advanced Topics:** -->
-
-<!-- - 🛠️ [**Create custom ELN templates**](./T16_7/T16_7_create_custom_eln_templates.md).
-- 🛠️ [**Use the tabular parser**](./T16_8/T16_8_write_a_custom_parser.md) for tabular data, such as `.csv` or `.xls` files. -->
+- 🔧 [**Create an instrument inventory**](01_inventory.md) for reusable provenance links.
+- 🧭 [**Set up an experiment hub**](02_experiment_substance.md) to connect all workflow steps.
+- 🧪 [**Document synthesis and sintering**](03_sol_gel_synthesis.md) with custom schemas and structured quantities.
+- 📥 [**Upload and parse XRD/SEM raw files**](05_xrd.md) and link measurements to experiment context.
+- 🔎 [**Search and filter your results**](07_finding_data.md) using structured metadata.
 
 ## At the end of this tutorial, you will be able to:
 - Efficiently **search, filter, and explore data** in NOMAD.

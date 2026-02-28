@@ -15,7 +15,9 @@ Now, we transform liquid precursors into a solid powder. Accurate documentation 
 4. **Fill Remaining Quantities**:
     * Still using the same spreadsheet, fill the main process variables in `SolGelSynthesis` (target product info, water settings, pH range, stirring, and calcination/ramp values).
     * The **Tabelle1** tab describes the fixed protocol; you only enter its key variable parameters as quantities.
-5. **Link it**: Ensure you link this synthesis step to your overarching **Experiment** using the reference fields.
+5. **Save and Link**:
+    * Save the Sol-Gel entry.
+    * Open your **Experiment ELN** entry and add a reference to this synthesis step.
 
 !!! tip "The Value of the GUI"
     Using the graphical interface is great for one-off syntheses. However, in the next step (Sintering), we will learn how to bypass manual typing by providing NOMAD directly with a data file!

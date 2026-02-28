@@ -7,6 +7,7 @@ Navigate to the **Explore** section in the main NOMAD navigation bar. This dashb
 ## 2. Basic Search and Filtering
 On the left side of the Explore page, you will find the filtering panel. Let's find the specific data we just processed:
 
+* **By ELN Section:** Use the ELN/Sections filter to narrow to entries like `SolGelSynthesis` or `SinteringProcess`.
 * **By Method:** Under the "Method" filter, select **XRD** or **SEM**. This immediately narrows down the results to only those specific measurement types. 
 * **By Material:** Under the "Material" or "Elements" filter, type the chemical formula (e.g., `La`, `Pr`) to find data specifically related to your Sol-Gel synthesis.
 * **By Instrument:** Because we linked our data to the Instrument inventory, you can filter by the specific `Instrument model` (e.g., `JSM-7610F Plus`).
