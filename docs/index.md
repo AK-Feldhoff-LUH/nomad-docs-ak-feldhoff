@@ -1,31 +1,27 @@
-# Tutorial: User Basics&mdash;Getting started with NOMAD for research data management
+# Tutorial: Sol-Gel Synthesis and Characterization Workflow in NOMAD
 
-In this tutorial, you'll learn how to use **NOMAD** to manage and organize your research data. Whether you are working with computational or experimental data, NOMAD's graphical user interface makes it easy to upload, share, explore, and analyze your data. We will also focus on using NOMAD to improve collaboration on your research projects and to ensure that your data align with the FAIR data principles (Findable, Accessible, Interoperable, and Reusable).
+This tutorial walks through a complete **HeOx ceramic** workflow in NOMAD, from process documentation to measurement provenance. You will create an experiment hub, document synthesis and sintering with structured ELN schemas, and connect parsed XRD/SEM data to the same workflow graph.
 
 ## What you'll do:
 
-- 🌐 [**Explore NOMAD entries**](./T16_2/T16_2_explore_data_records.md) and gain insights from the rich metadata structured in NOMAD's data model.
-- 📖 [**Document your research**](./T16_6/T16_6_document_your_research.md) using NOMAD’s built-in ELN templates.
-- 📥 [**Upload raw data files**](./T16_3/T16_3_upload_raw_data_files.md) and inspect the extracted data structured in NOMAD’s data model.
-- 🗂️ [**Create a dataset**](./T16_5/T16_5_create_a_dataset.md) and simulate publishing it with a DOI.
-
-<!-- **Advanced Topics:** -->
-
-<!-- - 🛠️ [**Create custom ELN templates**](./T16_7/T16_7_create_custom_eln_templates.md).
-- 🛠️ [**Use the tabular parser**](./T16_8/T16_8_write_a_custom_parser.md) for tabular data, such as `.csv` or `.xls` files. -->
+- [**I. Creating an Instrument Inventory**](01_inventory.md)
+- **II. Documenting an Experiment**
+    - [**a. Experiment Setup**](02_experiment_substance.md)
+    - [**b. Sol-Gel Synthesis**](03_sol_gel_synthesis.md)
+    - [**c. Sintering Process**](04_sintering_process.md)
+    - [**d. XRD Characterization**](05_xrd.md)
+    - [**e. SEM Characterization**](06_sem.md)
+- [**III. Finding Previous Experiments**](07_finding_data.md)
 
 ## At the end of this tutorial, you will be able to:
-- Efficiently **search, filter, and explore data** in NOMAD.
-- Manage, upload, and share your research data using NOMAD.
-- Publish your datasets with DOIs to ensure **accessibility and reusability**.
-- Use the **NOMAD ELN functionality** to document your research.
-- Understand the essentials of creating custom templates and parsers for your research data.
+- Create and maintain an **Experiment-centered ELN graph** across process and measurement entries.
+- Capture synthesis inputs via repeatable **reagents** and key process variables in a custom schema.
+- Use both **manual GUI entry** and **data-instantiated schema entries**.
+- Preserve provenance by linking **raw files**, **parsed metadata**, **sample context**, and **instrument records**.
+- Efficiently **search and filter** entries using methods, ELN sections, materials, and instrument metadata.
 
 ## ⚙️ Tutorial Preparation
 
-### Create a NOMAD account at the [NOMAD Central Deployment](https://nomad-lab.eu/prod/v1/gui/search/entries){:target="\_blank"}
+### Open the Feldhoff NOMAD Oasis
 
-Click `LOGIN/REGISTER` at the top right.
-
-!!! warning "Attention"
-    This is a public database for sharing your research data. For day to day usage, you may want to use your institute's NOMAD Oasis Installation, depending on your group's research data management protocols.
+Start the tutorial by opening the [Feldhoff NOMAD Oasis](https://nomad.pci.uni-hannover.de/nomad-oasis/gui/about/information){:target="\_blank"} and logging in with your existing account.
