@@ -7,15 +7,14 @@ edit_uri: ""
 
 nav:
   - Home: index.md
-  - Tutorials:
-    - I. Creating Inventory: 01_inventory.md
-    - II. Documenting Experiment:
-      - Experiment & Substance: 02_experiment_substance.md
-      - a. Sol-Gel Synthesis: 03_sol_gel_synthesis.md
-      - b. Sintering Process: 04_sintering_process.md
-      - c. XRD Characterization: 05_xrd.md
-      - d. SEM Characterization: 06_sem.md
-    - III. Search and Find: 07_finding_data.md
+  - I. Creating an Instrument Inventory: 01_inventory.md
+  - II. Documenting an Experiment:
+    - a. Experiment Setup: 02_experiment_substance.md
+    - b. Sol-Gel Synthesis: 03_sol_gel_synthesis.md
+    - c. Sintering Process: 04_sintering_process.md
+    - d. XRD Characterization: 05_xrd.md
+    - e. SEM Characterization: 06_sem.md
+  - III. Finding Previous Experiments: 07_finding_data.md
 
 plugins:
  - search
@@ -58,8 +57,8 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.tilde
   - pymdownx.tabbed:
       alternate_style: true

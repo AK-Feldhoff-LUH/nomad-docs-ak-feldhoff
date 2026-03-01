@@ -1,24 +1,31 @@
 # Sintering Process
 
-This section documents the thermal treatment used to sinter the **HeOx-1** powder into a dense ceramic. 
+This section documents the thermal treatment used to sinter the **HeOx-1** powder into a dense ceramic.
 
-Instead of manually typing values into the graphical interface like we did for the Sol-Gel synthesis, we will use a more advanced NOMAD feature: **instantiating a schema via a Data file**. 
+Instead of manual entry (as in Sol-Gel), this step demonstrates **schema instantiation from a data file**.
 
-## The Two-File Approach
-In NOMAD, a schema is just a blank template. You can create a separate file that contains your actual data and tells NOMAD *which* template to use via an `m_def` (meta-definition) pointer.
+## Schema + Data Files
+In NOMAD, a schema defines the structure, while a separate data file provides concrete values and points to that schema via `m_def`.
 
 Download these three files to see how it works:
-[⬇️ Download sintering_schema.archive.yaml](assets/sintering_schema.archive.yaml){ .md-button .md-button--primary }
-[⬇️ Download sintering_data.archive.yaml](assets/sintering_data.archive.yaml){ .md-button .md-button--primary }
-[⬇️ Download sintering.parameters.xlsx](assets/sintering.parameters.xlsx){ .md-button }
+[⬇️ Download sintering_schema.archive.yaml](assets/sintering_schema.archive.yaml){ .md-button .nomad-button .md-button--primary }
+
+[⬇️ Download sintering_data.archive.yaml](assets/sintering_data.archive.yaml){ .md-button .nomad-button .md-button--primary }
+
+[⬇️ Download sintering.parameters.xlsx](assets/sintering.parameters.xlsx){ .md-button .nomad-button }
 
 ## Workflow: Data Instantiation
-1. **Upload the Files:** Drag and drop all three downloaded files (`sintering_schema.archive.yaml`, `sintering_data.archive.yaml`, and the `.xlsx` file) directly into your NOMAD upload space.
-2. **Inspect the Magic:** Click on the generated `sintering_data` entry. 
-    * Notice how NOMAD automatically read the `m_def` line, connected the data to your schema, and generated a fully populated graphical entry!
-    * You will see the **900 °C**, **15 min**, and **50 MPa** values (extracted from the Excel file) already filled in.
-3. **Link it**: Go back to your overarching **Experiment ELN** and link this step to your project graph. Even though the data populated automatically, we still need to connect this process to our physical sample. Inside your new Sintering entry, use the reference to link this process to your **Substance**.
+1. **Upload the Files:** On the **Your uploads** page, drag and drop all three downloaded files (`sintering_schema.archive.yaml`, `sintering_data.archive.yaml`, and the `.xlsx` file) into your working upload.
+2. **Open the generated entry (OVERVIEW):**
+    * Click `sintering_data.archive.yaml` in your upload.
+    * On the **OVERVIEW** page, confirm that NOMAD recognized the method as `SinteringProcess` and created the corresponding entry.
+    * In the entry card, verify that key process quantities (e.g. final temperature, dwell time, applied pressure) are already populated.
+3. **Inspect/edit in DATA tab:**
+    * Open the **DATA** tab to inspect or refine the instantiated ELN fields.
+    * Save if you make any edits.
+4. **Save and Link**:
+    * Go back to your **Experiment ELN** (**DATA** tab), open `steps`, and add this sintering entry as a step reference.
+    * If your schema provides a sample/material reference field, link it to the corresponding synthesized material context from Sol-Gel.
 
-!!! tip "Why upload the Excel file if the YAML already has the data?"
-    You might wonder why we still upload the raw `.xlsx` file if our `sintering_data.archive.yaml` already contains the numbers. This is a core principle of **FAIR data**: always keep your raw "ground truth" files linked to your extracted metadata for perfect provenance. Furthermore, in a fully automated workflow, a custom NOMAD parser would actually read this Excel file to generate that data YAML automatically!
-    
+Keep the accompanying parameter/raw file in the upload together with schema and instantiated data, so the provenance of extracted metadata remains transparent.
+

@@ -1,20 +1,33 @@
-In NOMAD, data is best organized as an interconnected graph. Before we document the synthesis parameters, we must set up our **Experiment** (the umbrella linking all steps) and our **Substance** (the chemical identity).
+# Experiment Setup
 
-## 1. Create the Experiment Entry (The "Umbrella")
-The `Experiment` entry acts as the central hub. It collects references to all the individual steps in your workflow.
+In NOMAD, data is best organized as an interconnected graph. Before documenting synthesis and characterization details, create one **Experiment ELN** entry that serves as the central hub for this workflow.
 
-1. Navigate to the **Uploads** page and open your current upload.
+## 1. Create the Experiment ELN entry
+The Experiment entry collects references to all process and measurement steps that belong to the same study.
+
+1. On the **Your uploads** page, open your current upload.
 2. Click the **CREATE FROM SCHEMA** button.
 3. Select the built-in **Experiment ELN** schema.
-4. Fill in the **Title** (e.g., `Synthesis and Characterization of HeOx-1 Ceramic`) and click **Save**. 
+4. Give it a clear title, e.g. `Synthesis and Characterization of HeOx-1 Ceramic`.
+5. Save the entry.
+6. After creation, the entry opens directly in the **DATA** tab.
 
-!!! tip "Looking Ahead"
-    As we complete the Sol-Gel synthesis, Sintering, and Characterization steps, we will link them all back to this central hub!
+## 2. Complete metadata in the DATA tab
+1. In the left tree, open `data` and edit the main Experiment quantities.
+2. Fill the core fields visible in your Experiment ELN, especially:
+   * `name`
+   * `startingTime`
+   * `tags`
+   * `ID`
+   * `location`
+   * `description`
+3. Open the `experiment_identifiers` subsection (Readable Identifiers) and fill your group-specific identifiers (e.g. institute, owner, short name, lab ID).
+4. Use consistent naming/identifier conventions so this experiment can be found and reused later.
 
-## 2. Create a Substance Entry (The Material Identity)
-A **Substance** entry acts as the fundamental chemical identity that can be reused across multiple different physical samples.
+## 3. Use the Experiment as your workflow hub
+1. Keep this Experiment entry accessible while working on the next tutorial steps.
+2. After each new step (Sol-Gel, Sintering, XRD, SEM), return to the Experiment entry (**DATA** tab), open the `steps` subsection, and add a step reference to that entry.
+3. This keeps your full provenance graph in one place.
 
-1. Go back to your Upload overview and click **CREATE FROM SCHEMA**.
-2. Select the built-in **Substance ELN** schema.
-3. Name it and provide its target stoichiometry. Click **Save**.
+In practice (outside this tutorial), publish the Experiment entry when the workflow is complete so the final record is immutable and shareable.
 

@@ -1,19 +1,56 @@
-# III. Search and Find Your Data
+# III. Finding Previous Experiments
 
-The true power of NOMAD's structured ELNs and automated parsers becomes apparent when you need to find specific data months or years later. Because we used custom schemas, linked our entries, and parsed our raw files, everything is now completely searchable.
+The value of structured ELNs appears when you need to retrieve specific entries later. Because we linked experiment steps, instruments, and measurements, the full workflow is queryable.
 
-## 1. The Explore Interface
-Navigate to the **Explore** section in the main NOMAD navigation bar. This dashboard allows you to search through all of your indexed data. 
-## 2. Basic Search and Filtering
-On the left side of the Explore page, you will find the filtering panel. Let's find the specific data we just processed:
+## 1. Start Search from Your uploads
+1. On the **Your uploads** page, open one of your entries.
+2. Use the search action (Search ELN / Explore Entries) to jump into **EXPLORE** with your current upload context.
 
-* **By Method:** Under the "Method" filter, select **XRD** or **SEM**. This immediately narrows down the results to only those specific measurement types. 
-* **By Material:** Under the "Material" or "Elements" filter, type the chemical formula (e.g., `La`, `Pr`) to find data specifically related to your Sol-Gel synthesis.
-* **By Instrument:** Because we linked our data to the Instrument inventory, you can filter by the specific `Instrument model` (e.g., `JSM-7610F Plus`).
+## 2. Search by Quantities in EXPLORE
+In EXPLORE, use the quantity search bar to add filters.
 
-## 3. Advanced Faceted Search
-Since we created a custom schema for the Sintering process, you can even search by the exact parameters used during that process!
-Try searching for a specific **Temperature range** to find all samples sintered between 800 °C and 1000 °C.
+1. Click the quantity search input and start typing the quantity name.
+2. Use autocomplete suggestions to select the exact indexed quantity.
+3. Add filter values and combine multiple filters.
 
-!!! tip "The FAIR Payoff"
-    If we had simply uploaded a folder of `.RAW` and `.BMP` files with no metadata, we could only search by file name (Free text). By taking the time to build a workflow graph (**Substance → Process → Measurement → Instrument**), our data is now fully AI-ready and FAIR (Findable, Accessible, Interoperable, and Reusable).
+Typical useful quantities for this tutorial include:
+* `results.eln.sections` (e.g. `SolGelSynthesis`, `SinteringProcess`, measurement ELNs)
+* `results.eln.tags`
+* method/instrument/material-related quantities available in your deployment
+* custom process quantities from your schemas (e.g. sintering temperature/pressure fields)
+
+## 3. Demo Searches (Copy/Paste)
+Use the quantity search input with autocomplete. For each example:
+1. Type the quantity name.
+2. Select it from autocomplete.
+3. Enter the value shown.
+
+Try these first:
+* `results.eln.sections=SolGelSynthesis`
+* `results.eln.sections=SinteringProcess`
+* `results.eln.sections=ELNInstrument`
+* `results.eln.names=JEOL-SEM-01`
+* `results.eln.instruments=JSM-7610F Plus`
+* `results.eln.names=sintering data`
+
+Then combine filters, for example:
+* `results.eln.sections=SinteringProcess` + `results.eln.names=sintering data`
+* `results.eln.sections=ELNInstrument` + `results.eln.names=JEOL-SEM-01`
+
+You can also search with high-level metadata, for example:
+* `authors.name=Markus Scheidgen`
+* `entry_name=sintering_data.archive.yaml`
+* `mainfile=sintering_data.archive.yaml`
+* `upload_id=...` (copy from entry metadata on OVERVIEW)
+* `entry_create_time>=2026-02-01` (date/range style queries)
+
+Use autocomplete to confirm the exact quantity names available in your deployment.
+
+For custom schema quantities, use autocomplete to find the exact indexed path in your deployment, then filter by value (for example sintering temperature or pressure fields).
+
+## 4. Notes on Apps and Customization
+The default **Entries** app is generic and not optimized for all experimental workflows.
+
+For production usage, you can build custom search apps/views tailored to your ELN schemas and lab workflows (see NOMAD documentation on developing plugins and apps).
+
+If we had uploaded only raw files without structured metadata and links, search would be limited mostly to filenames and free text. By keeping an Experiment-centered ELN graph, your data remains findable and reusable.
