@@ -13,7 +13,7 @@ Now, we transform liquid precursors into a solid powder. Accurate documentation 
 2. **Create from custom schema**:
     * Click **CREATE FROM SCHEMA**.
     * Choose **Custom schema**.
-    * Select the uploaded `synthesis_schema.archive.yaml`.
+    * Select the uploaded `synthesis_schema.archive.yaml` (**Sol-gel Synthesis Schema**).
     * Select `SolGelSynthesis` as the section definition.
     * You will then be on the Sol-Gel ELN **DATA** page.
 3. **Fill Reagents (PubChem subsection)**:
@@ -26,4 +26,4 @@ Now, we transform liquid precursors into a solid powder. Accurate documentation 
     * The **Tabelle1** tab describes the fixed protocol; you only enter its key variable parameters as quantities.
 5. **Save and Link**:
     * Save the Sol-Gel entry.
-    * Open your **Experiment ELN** entry (**DATA** tab), go to `steps`, and add this Sol-Gel entry as a step reference.
+    * Open your **Experiment ELN** entry (**DATA** tab), go to `steps`, and add this Sol-Gel entry as a step reference by searching through `activity` field.

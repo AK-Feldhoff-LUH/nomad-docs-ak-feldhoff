@@ -21,11 +21,13 @@ Typical useful quantities for this tutorial include:
 
 ## 3. Demo Searches (Copy/Paste)
 Use the quantity search input with autocomplete. For each example:
+
 1. Type the quantity name.
 2. Select it from autocomplete.
 3. Enter the value shown.
 
 Try these first:
+
 * `results.eln.sections=SolGelSynthesis`
 * `results.eln.sections=SinteringProcess`
 * `results.eln.sections=ELNInstrument`
@@ -34,10 +36,12 @@ Try these first:
 * `results.eln.names=sintering data`
 
 Then combine filters, for example:
+
 * `results.eln.sections=SinteringProcess` + `results.eln.names=sintering data`
 * `results.eln.sections=ELNInstrument` + `results.eln.names=JEOL-SEM-01`
 
 You can also search with high-level metadata, for example:
+
 * `authors.name=Markus Scheidgen`
 * `entry_name=sintering_data.archive.yaml`
 * `mainfile=sintering_data.archive.yaml`
