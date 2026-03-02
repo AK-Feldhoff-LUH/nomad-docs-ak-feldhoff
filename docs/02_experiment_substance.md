@@ -15,12 +15,12 @@ The Experiment entry collects references to all process and measurement steps th
 ## 2. Complete metadata in the DATA tab
 1. In the left tree, open `data` and edit the main Experiment quantities.
 2. Fill the core fields visible in your Experiment ELN, especially:
-   * `name`
-   * `startingTime`
-   * `tags`
-   * `ID`
-   * `location`
-   * `description`
+    * `name`
+    * `startingTime`
+    * `tags`
+    * `ID`
+    * `location`
+    * `description`
 3. Open the `experiment_identifiers` subsection (Readable Identifiers) and fill your group-specific identifiers (e.g. institute, owner, short name, lab ID).
 4. Use consistent naming/identifier conventions so this experiment can be found and reused later.
 
