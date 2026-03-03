@@ -1,27 +1,17 @@
-# Tutorial: Sol-Gel Synthesis and Characterization Workflow in NOMAD
+# AK Feldhoff Oasis Doc
+<span style="font-size: 0.85em; color: gray;">*Created by Glaide Data*</span>
 
-This tutorial walks through a complete **HeOx ceramic** workflow in NOMAD, from process documentation to measurement provenance. You will create an experiment hub, document synthesis and sintering with structured ELN schemas, and connect parsed XRD/SEM data to the same workflow graph.
+Welcome to the official documentation for the AK Feldhoff NOMAD Oasis! 
 
-## What you'll do:
+This portal provides everything you need to document your research data, understand the system, and keep the server running smoothly. Please select a section below to get started:
 
-- [**I. Creating an Instrument Inventory**](01_inventory.md)
-- **II. Documenting an Experiment**
-    - [**a. Experiment Setup**](02_experiment_substance.md)
-    - [**b. Sol-Gel Synthesis**](03_sol_gel_synthesis.md)
-    - [**c. Sintering Process**](04_sintering_process.md)
-    - [**d. XRD Characterization**](05_xrd.md)
-    - [**e. SEM Characterization**](06_sem.md)
-- [**III. Finding Previous Experiments**](07_finding_data.md)
+---
 
-## At the end of this tutorial, you will be able to:
-- Create and maintain an **Experiment-centered ELN graph** across process and measurement entries.
-- Capture synthesis inputs via repeatable **reagents** and key process variables in a custom schema.
-- Use both **manual GUI entry** and **data-instantiated schema entries**.
-- Preserve provenance by linking **raw files**, **parsed metadata**, **sample context**, and **instrument records**.
-- Efficiently **search and filter** entries using methods, ELN sections, materials, and instrument metadata.
+### 📚 [Official NOMAD Documentation](https://nomad-lab.eu/prod/v1/docs/)
+Looking for the standard NOMAD reference? Click here for comprehensive guides on the FAIRmat ecosystem, schemas, APIs, and general usage.
 
-## ⚙️ Tutorial Preparation
+### 🧪 [Tutorial: Documenting Experiments](tutorial.md)
+Follow our step-by-step tutorial specifically designed for the AK Feldhoff workflow. Learn how to document your Sol-Gel synthesis, Sintering processes, and link XRD/SEM characterizations.
 
-### Open the Feldhoff NOMAD Oasis
-
-Start the tutorial by opening the [Feldhoff NOMAD Oasis](https://nomad.pci.uni-hannover.de/nomad-oasis/gui/about/information){:target="\_blank"} and logging in with your existing account.
+### ⚙️ [How-To: Oasis Maintenance Guide](how_to.md)
+Server administrators and maintainers can find instructions for updating the Oasis software, renewing SSL certificates, troubleshooting, and performing regular system checks.
