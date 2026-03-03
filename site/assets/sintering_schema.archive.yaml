@@ -1,0 +1,34 @@
+definitions:
+  name: 'Sintering Schema'
+  sections:
+    SinteringProcess:
+      base_sections:
+        - nomad.datamodel.metainfo.basesections.Process
+        - nomad.datamodel.data.EntryData
+      description: |
+        Schema for the Sintering Process.
+      
+      quantities:
+        final_temperature:
+          type: np.float64
+          unit: degC
+          description: Final sintering temperature.
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
+        
+        dwell_time:
+          type: np.float64
+          unit: minute
+          description: Hold time at final sintering temperature.
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
+
+        applied_pressure:
+          type: np.float64
+          unit: MPa
+          description: Applied pressure during sintering.
+          m_annotations:
+            eln:
+              component: NumberEditQuantity

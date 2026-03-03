@@ -1,4 +1,4 @@
-site_name: Tutorial NOMAD User Basics
+site_name: Documentation
 site_description: |
   Glaide Data Management Tutorial for NOMAD Users
 site_author: Galide Data GmbH
@@ -7,14 +7,17 @@ edit_uri: ""
 
 nav:
   - Home: index.md
-  - I. Creating an Instrument Inventory: 01_inventory.md
-  - II. Documenting an Experiment:
-    - a. Experiment Setup: 02_experiment_substance.md
-    - b. Sol-Gel Synthesis: 03_sol_gel_synthesis.md
-    - c. Sintering Process: 04_sintering_process.md
-    - d. XRD Characterization: 05_xrd.md
-    - e. SEM Characterization: 06_sem.md
-  - III. Finding Previous Experiments: 07_finding_data.md
+  - Tutorial: 
+    - Overview: tutorial.md
+    - I. Creating an Instrument Inventory: 01_inventory.md
+    - II. Documenting an Experiment:
+      - a. Experiment Setup: 02_experiment_substance.md
+      - b. Sol-Gel Synthesis: 03_sol_gel_synthesis.md
+      - c. Sintering Process: 04_sintering_process.md
+      - d. XRD Characterization: 05_xrd.md
+      - e. SEM Characterization: 06_sem.md
+    - III. Finding Previous Experiments: 07_finding_data.md
+  - Maintenance Guide: how_to.md
 
 plugins:
  - search
@@ -27,7 +30,7 @@ theme:
     accent: '#008A67'
   font:
     text: 'Titillium Web'
-  logo: assets/glaide_logo_long_white.png
+  logo: assets/nomad-logo.png
   favicon: assets/favicon.png
   features:
     - navigation.instant
@@ -71,8 +74,7 @@ extra:
   icon:
     repo: fontawesome/brands/github
   footer: |
-    © FAIRmat-NFDI (Apache 2.0) — Modified by Glaide Data GmbH.
-    Licensed content; redistribution prohibited without permission.
+    Initial documentation by Glaide Data GmbH · Apache 2.0 License.
 
 use_directory_urls: false
 
