@@ -1,4 +1,4 @@
-site_name: AK Feldhoff Oasis Doc
+site_name: Documentation
 site_description: |
   Glaide Data Management Tutorial for NOMAD Users
 site_author: Galide Data GmbH
@@ -74,8 +74,7 @@ extra:
   icon:
     repo: fontawesome/brands/github
   footer: |
-    © FAIRmat-NFDI (Apache 2.0) — Modified by Glaide Data GmbH.
-    Licensed content; redistribution prohibited without permission.
+    Initial documentation by Glaide Data GmbH · Apache 2.0 License.
 
 use_directory_urls: false
 

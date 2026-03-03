@@ -1,0 +1,172 @@
+definitions:
+  name: 'Sol-gel Synthesis Schema'
+  sections:
+    SynthesisReagent:
+      base_sections:
+        - nomad.datamodel.metainfo.basesections.PubChemPureSubstanceSection
+      description: |
+        One reagent or product entry used in the sol-gel synthesis step.
+      quantities:
+        role:
+          type: str
+          description: 'Role in synthesis (reactant, additive, complexing agent, solvent, or product).'
+          m_annotations:
+            eln:
+              component: EnumEditQuantity
+              props:
+                suggestions:
+                  - reactant
+                  - additive
+                  - complexing_agent
+                  - solvent
+                  - product
+
+        purity:
+          type: np.float64
+          description: 'Purity as a fraction (e.g., 0.999).'
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
+
+        estimated_mol:
+          type: np.float64
+          unit: mol
+          description: 'Estimated reagent amount in mol.'
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
+
+        estimated_mass:
+          type: np.float64
+          unit: g
+          description: 'Estimated reagent mass in g.'
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
+
+        mass_for_50pct_batch:
+          type: np.float64
+          unit: g
+          description: 'Mass for 50% batch scaling.'
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
+
+        mass_for_33pct_batch:
+          type: np.float64
+          unit: g
+          description: 'Mass for 33% batch scaling.'
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
+
+    SolGelSynthesis:
+      base_sections:
+        - nomad.datamodel.metainfo.basesections.Process
+        - nomad.datamodel.data.EntryData
+      description: |
+        Fixed sol-gel synthesis protocol for HeOx samples.
+
+        Protocol outline for this synthesis step:
+        1) Heat water while stirring (water_volume, water_heating_temperature).
+        2) Dissolve metal nitrates (reagents).
+        3) Add EDTA and then citric acid (reagents).
+        4) Adjust pH with ammonia (target_ph_min, target_ph_max).
+        5) Continue stirring (stirring_time).
+        6) Perform precalcination in heating mantle.
+        7) Cool down.
+        8) Final calcination with controlled ramp (calcination_temperature,
+           calcination_time, heating_cooling_rate).
+
+        Only key variable parameters of this fixed workflow are captured as quantities
+        below (e.g., water volume/temperature, pH range, stirring time, calcination
+        temperature/time, and heating/cooling rate).
+      sub_sections:
+        reagents:
+          section: '#/SynthesisReagent'
+          repeats: true
+      quantities:
+        lab_id:
+          type: str
+          description: 'The sample ID (e.g., HeOx-1) resulting from this synthesis.'
+          m_annotations:
+            eln:
+              component: StringEditQuantity
+              label: Sample ID
+
+        target_product_formula:
+          type: str
+          description: 'Target composition/formula (e.g., (La0.2Pr0.2Nd0.2Sm0.2Gd0.2)2CuO4).'
+          m_annotations:
+            eln:
+              component: StringEditQuantity
+
+        target_product_mass:
+          type: np.float64
+          unit: g
+          description: 'Target product mass used for recipe calculation.'
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
+
+        water_volume:
+          type: np.float64
+          unit: ml
+          description: 'Volume of water used in the initial heating step.'
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
+
+        water_heating_temperature:
+          type: np.float64
+          unit: degC
+          description: 'Water heating temperature before dissolution.'
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
+
+        target_ph_min:
+          type: np.float64
+          description: 'Lower bound of pH adjustment target.'
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
+
+        target_ph_max:
+          type: np.float64
+          description: 'Upper bound of pH adjustment target.'
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
+
+        stirring_time:
+          type: np.float64
+          unit: hour
+          description: 'Stirring duration after adding reagents.'
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
+
+        calcination_temperature:
+          type: np.float64
+          unit: degC
+          description: 'Temperature used during the final calcination step.'
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
+
+        calcination_time:
+          type: np.float64
+          unit: hour
+          description: 'Duration of the final calcination step.'
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
+
+        heating_cooling_rate:
+          type: np.float64
+          unit: K / minute
+          description: 'Heating/cooling rate used in calcination.'
+          m_annotations:
+            eln:
+              component: NumberEditQuantity
