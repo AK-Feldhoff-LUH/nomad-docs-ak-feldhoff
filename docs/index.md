@@ -1,5 +1,4 @@
-# AK Feldhoff Oasis Doc
-<span style="font-size: 0.85em; color: gray;">*Created by Glaide Data*</span>
+# AK Feldhoff Oasis Documentation
 
 Welcome to the official documentation for the AK Feldhoff NOMAD Oasis! 
 
