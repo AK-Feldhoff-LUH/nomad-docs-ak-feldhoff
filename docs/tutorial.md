@@ -5,14 +5,15 @@ This tutorial walks through a complete **HeOx ceramic** workflow in NOMAD, from 
 
 ## What you'll do:
 
-- [**I. Creating an Instrument Inventory**](01_inventory.md)
+- [**I. Creating an Instrument Inventory**](instrument_inventory.md)
 - **II. Documenting an Experiment**
-    - [**a. Experiment Setup**](02_experiment_substance.md)
-    - [**b. Sol-Gel Synthesis**](03_sol_gel_synthesis.md)
-    - [**c. Sintering Process**](04_sintering_process.md)
-    - [**d. XRD Characterization**](05_xrd.md)
-    - [**e. SEM Characterization**](06_sem.md)
-- [**III. Finding Previous Experiments**](07_finding_data.md)
+    - [**a. Experiment Setup**](experiment_setup.md)
+    - [**b. Sol-Gel Synthesis**](sol_gel_synthesis.md)
+    - [**c. Sample Entry**](sample_entry.md)
+    - [**d. Sintering Process**](sintering_process.md)
+    - [**e. XRD Characterization**](xrd_characterization.md)
+    - [**f. SEM Characterization**](sem_characterization.md)
+- [**III. Finding Previous Experiments**](finding_previous_experiments.md)
 
 ## At the end of this tutorial, you will be able to:
 - Create and maintain an **Experiment-centered ELN graph** across process and measurement entries.
