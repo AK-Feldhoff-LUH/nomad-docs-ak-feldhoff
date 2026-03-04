@@ -85,7 +85,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="https://www.glaidedata.com/" title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+    <a href="https://nomad.pci.uni-hannover.de/nomad-oasis/gui/about/information" title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
       
   <img src="assets/nomad-logo.png" alt="logo">
 
@@ -182,7 +182,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://www.glaidedata.com/" title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+    <a href="https://nomad.pci.uni-hannover.de/nomad-oasis/gui/about/information" title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
       
   <img src="assets/nomad-logo.png" alt="logo">
 
@@ -541,7 +541,13 @@
 <p><a class="md-button nomad-button" href="assets/sintering.parameters.xlsx">⬇️ Download sintering.parameters.xlsx</a></p>
 <h2 id="workflow">Workflow<a class="headerlink" href="#workflow" title="Permanent link">&para;</a></h2>
 <ol>
-<li><strong>Upload the Files:</strong> Starting from our container Experiment Upload (or create a new upload, whichever you prefer), upload the schema (<code>sintering_schema.archive.yaml</code>) and data (<code>sintering_data.archive.yaml</code>) files. The <code>.xlsx</code> file can also be uploaded for storage of original raw data as needed. Multiple files can be uploaded at once by compressing them into the <code>.zip</code> format.</li>
+<li><strong>Inspect the files first:</strong><ul>
+<li>Open <code>sintering_schema.archive.yaml</code> and <code>sintering_data.archive.yaml</code> in your editor.</li>
+<li>The schema file defines the structure of the <code>SinteringProcess</code> entry (which quantities and subsections exist).</li>
+<li>The data file contains the concrete values to populate those quantities for this specific run.</li>
+</ul>
+</li>
+<li><strong>Upload the Files:</strong> Starting from our container Experiment Upload, click <strong>DROP FILES HERE OR CLICK TO OPEN DIALOG</strong> to upload the schema (<code>sintering_schema.archive.yaml</code>) and data (<code>sintering_data.archive.yaml</code>) files. The <code>.xlsx</code> file can also be uploaded for storage of original raw data as needed. Multiple files can be uploaded at once by compressing them into the <code>.zip</code> format.</li>
 <li><strong>Open the generated entry (OVERVIEW):</strong><ul>
 <li>Click <code>sintering_data.archive.yaml</code> in your upload.</li>
 <li>On the <strong>OVERVIEW</strong> page, confirm that NOMAD recognized the method as <code>SinteringProcess</code> and created the corresponding entry.</li>
@@ -554,24 +560,25 @@
 </ul>
 </li>
 <li>
-<p><strong>Save and Link</strong>:</p>
-<ul>
-<li>Go back to your <strong>Experiment ELN</strong> (<strong>DATA</strong> tab), open <code>steps</code>, and add this sintering entry as a step reference by searching through <code>activity</code> field.</li>
-<li>If your schema provides a sample/material reference field, link it to the sample created in <strong>II.c. Sample Entry</strong>.</li>
-</ul>
-</li>
-<li>
 <p><strong>Create a post-sintering sample (He01 ceramic)</strong>:</p>
 <ul>
 <li>In the <code>SinteringProcess</code> entry (<strong>DATA</strong> tab), go to the <code>samples</code> subsection and click <strong>+</strong>.</li>
-<li>Open the created <code>CompositeSystemReference</code> item and click <strong>+</strong> next to the reference field.</li>
-<li>Select <code>ELNSample</code> as inheriting class, give a name (e.g. <code>He01-ceramic</code>), and click <strong>CREATE</strong>.</li>
-<li>Fill at least <code>name</code> and <code>lab_id</code>, then save.</li>
-<li>Open <strong>OVERVIEW</strong> and verify in the <strong>Workflow Graph</strong> card that this ceramic sample appears as output of the sintering step.</li>
+<li>Go to the <code>composite system reference</code> field and click <strong>+</strong> to create a new referenced entry.</li>
+<li>Select <code>ELNSample</code> as inheriting class.</li>
+<li>Give the new sample a name, e.g. <code>He01-ceramic</code>.</li>
+<li>Click <strong>CREATE</strong>.</li>
+<li>In the created sample entry, fill at least <code>name</code> and <code>lab_id</code>.</li>
+<li>Save the sample entry.</li>
+<li>Open the <strong>OVERVIEW</strong> tab of the sintering entry and confirm in the <strong>Workflow Graph</strong> card that this ceramic sample appears as output of the sintering step.</li>
+</ul>
+</li>
+<li>
+<p><strong>Save and Link</strong>:</p>
+<ul>
+<li>Go back to your <strong>Experiment ELN</strong> (<strong>DATA</strong> tab), open <code>steps</code>, and add this sintering entry as a step reference by searching through <code>activity</code> field.</li>
 </ul>
 </li>
 </ol>
-<p>Keep the accompanying parameter/raw file in the upload together with schema and instantiated data, so the provenance of extracted metadata remains transparent.</p>
 
               
             </article>

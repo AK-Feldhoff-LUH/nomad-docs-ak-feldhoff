@@ -1,5 +1,5 @@
 # Tutorial: Sol-Gel Synthesis and Characterization Workflow in NOMAD
-<span style="display: block; margin-top: -0.55em; margin-bottom: 0.45em; font-size: 1.150em; color: gray;"><em>Created by</em> <img src="assets/glaide_logo_long_white.png" alt="Glaide logo" style="height: 1.986em; vertical-align: middle;" /></span>
+<span style="display: block; margin-top: -0.55em; margin-bottom: 0.45em; font-size: 1.150em; color: gray;"><em>Created by</em> <a href="https://www.glaidedata.com/" target="_blank" rel="noopener"><img src="assets/glaide_logo_long_white.png" alt="Glaide logo" style="height: 1.986em; vertical-align: middle;" /></a></span>
 
 This tutorial walks through a complete **HeOx ceramic** workflow in NOMAD, from process documentation to measurement provenance. You will create an experiment hub, document synthesis and sintering with structured ELN schemas, and connect parsed XRD/SEM data to the same workflow graph.
 

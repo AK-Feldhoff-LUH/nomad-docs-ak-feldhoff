@@ -85,7 +85,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="https://www.glaidedata.com/" title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+    <a href="https://nomad.pci.uni-hannover.de/nomad-oasis/gui/about/information" title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
       
   <img src="assets/nomad-logo.png" alt="logo">
 
@@ -182,7 +182,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://www.glaidedata.com/" title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+    <a href="https://nomad.pci.uni-hannover.de/nomad-oasis/gui/about/information" title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
       
   <img src="assets/nomad-logo.png" alt="logo">
 
@@ -434,29 +434,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-start-search-from-your-uploads" class="md-nav__link">
-    1. Start Search from Your uploads
+  <a href="#1-search-by-quantities-in-explore" class="md-nav__link">
+    1. Search by Quantities in EXPLORE
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-search-by-quantities-in-explore" class="md-nav__link">
-    2. Search by Quantities in EXPLORE
+  <a href="#2-create-a-filter-widget-with-terms" class="md-nav__link">
+    2. Create a Filter Widget with +TERMS
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-demo-searches-copypaste" class="md-nav__link">
-    3. Demo Searches (Copy/Paste)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-notes-on-apps-and-customization" class="md-nav__link">
-    4. Notes on Apps and Customization
+  <a href="#3-notes-on-apps-and-customization" class="md-nav__link">
+    3. Notes on Apps and Customization
   </a>
   
 </li>
@@ -518,29 +511,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-start-search-from-your-uploads" class="md-nav__link">
-    1. Start Search from Your uploads
+  <a href="#1-search-by-quantities-in-explore" class="md-nav__link">
+    1. Search by Quantities in EXPLORE
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-search-by-quantities-in-explore" class="md-nav__link">
-    2. Search by Quantities in EXPLORE
+  <a href="#2-create-a-filter-widget-with-terms" class="md-nav__link">
+    2. Create a Filter Widget with +TERMS
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-demo-searches-copypaste" class="md-nav__link">
-    3. Demo Searches (Copy/Paste)
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-notes-on-apps-and-customization" class="md-nav__link">
-    4. Notes on Apps and Customization
+  <a href="#3-notes-on-apps-and-customization" class="md-nav__link">
+    3. Notes on Apps and Customization
   </a>
   
 </li>
@@ -560,31 +546,20 @@
 
 <h1 id="iii-finding-previous-experiments">III. Finding Previous Experiments<a class="headerlink" href="#iii-finding-previous-experiments" title="Permanent link">&para;</a></h1>
 <p>The value of structured ELNs appears when you need to retrieve specific entries later. Because we linked experiment steps, instruments, and measurements, the full workflow is queryable.</p>
-<h2 id="1-start-search-from-your-uploads">1. Start Search from Your uploads<a class="headerlink" href="#1-start-search-from-your-uploads" title="Permanent link">&para;</a></h2>
-<ol>
-<li>On the <strong>Your uploads</strong> page, open one of your entries.</li>
-<li>Use the search action (Search ELN / Explore Entries) to jump into <strong>EXPLORE</strong> with your current upload context.</li>
-</ol>
-<h2 id="2-search-by-quantities-in-explore">2. Search by Quantities in EXPLORE<a class="headerlink" href="#2-search-by-quantities-in-explore" title="Permanent link">&para;</a></h2>
+<h2 id="1-search-by-quantities-in-explore">1. Search by Quantities in EXPLORE<a class="headerlink" href="#1-search-by-quantities-in-explore" title="Permanent link">&para;</a></h2>
 <p>In EXPLORE, use the quantity search bar to add filters.</p>
 <ol>
 <li>Click the quantity search input and start typing the quantity name.</li>
 <li>Use autocomplete suggestions to select the exact indexed quantity.</li>
-<li>Add filter values and combine multiple filters.</li>
+<li>Add filter values.</li>
+<li>Add as many filter tokens as needed to increase search specificity.</li>
 </ol>
-<p>Typical useful quantities for this tutorial include:
+<p>Useful quantities for this tutorial include:
 * <code>results.eln.sections</code> (e.g. <code>SolGelSynthesis</code>, <code>SinteringProcess</code>, measurement ELNs)
 * <code>results.eln.tags</code>
 * method/instrument/material-related quantities available in your deployment
 * custom process quantities from your schemas (e.g. sintering temperature/pressure fields)</p>
-<h2 id="3-demo-searches-copypaste">3. Demo Searches (Copy/Paste)<a class="headerlink" href="#3-demo-searches-copypaste" title="Permanent link">&para;</a></h2>
-<p>Use the quantity search input with autocomplete. For each example:</p>
-<ol>
-<li>Type the quantity name.</li>
-<li>Select it from autocomplete.</li>
-<li>Enter the value shown.</li>
-</ol>
-<p>Try these first:</p>
+<p>Try these example searches (copy/paste):</p>
 <ul>
 <li><code>results.eln.sections=SolGelSynthesis</code></li>
 <li><code>results.eln.sections=SinteringProcess</code></li>
@@ -592,26 +567,30 @@
 <li><code>results.eln.names=JEOL-SEM-01</code></li>
 <li><code>results.eln.instruments=JSM-7610F Plus</code></li>
 <li><code>results.eln.names=sintering data</code></li>
-</ul>
-<p>Then combine filters, for example:</p>
-<ul>
-<li><code>results.eln.sections=SinteringProcess</code> + <code>results.eln.names=sintering data</code></li>
-<li><code>results.eln.sections=ELNInstrument</code> + <code>results.eln.names=JEOL-SEM-01</code></li>
-</ul>
-<p>You can also search with high-level metadata, for example:</p>
-<ul>
-<li><code>authors.name=Markus Scheidgen</code></li>
+<li><code>authors.name=&lt;your name&gt;</code></li>
 <li><code>entry_name=sintering_data.archive.yaml</code></li>
 <li><code>mainfile=sintering_data.archive.yaml</code></li>
 <li><code>upload_id=...</code> (copy from entry metadata on OVERVIEW)</li>
 <li><code>entry_create_time&gt;=2026-02-01</code> (date/range style queries)</li>
 </ul>
+<p>Use the quantity search input with autocomplete. For each example:</p>
+<ol>
+<li>Type the quantity name.</li>
+<li>Select it from autocomplete.</li>
+<li>Enter the value shown.</li>
+</ol>
 <p>Use autocomplete to confirm the exact quantity names available in your deployment.</p>
 <p>For custom schema quantities, use autocomplete to find the exact indexed path in your deployment, then filter by value (for example sintering temperature or pressure fields).</p>
-<h2 id="4-notes-on-apps-and-customization">4. Notes on Apps and Customization<a class="headerlink" href="#4-notes-on-apps-and-customization" title="Permanent link">&para;</a></h2>
-<p>The default <strong>Entries</strong> app is generic and not optimized for all experimental workflows.</p>
-<p>For production usage, you can build custom search apps/views tailored to your ELN schemas and lab workflows (see NOMAD documentation on developing plugins and apps).</p>
-<p>If we had uploaded only raw files without structured metadata and links, search would be limited mostly to filenames and free text. By keeping an Experiment-centered ELN graph, your data remains findable and reusable.</p>
+<h2 id="2-create-a-filter-widget-with-terms">2. Create a Filter Widget with +TERMS<a class="headerlink" href="#2-create-a-filter-widget-with-terms" title="Permanent link">&para;</a></h2>
+<p>You can create a quick filter widget directly in EXPLORE:</p>
+<ol>
+<li>Click <strong>+TERMS</strong>.</li>
+<li>In <strong>X AXIS Search quantity</strong>, enter <code>entry_type</code>.</li>
+<li>Click <strong>Done</strong>.</li>
+<li>Use the new widget to filter entries by type.</li>
+</ol>
+<h2 id="3-notes-on-apps-and-customization">3. Notes on Apps and Customization<a class="headerlink" href="#3-notes-on-apps-and-customization" title="Permanent link">&para;</a></h2>
+<p>The default <strong>Entries</strong> app is generic and not optimized for all experimental workflows. However, it is possible to build custom search apps/views tailored to your ELN schemas and lab workflows (see <a href="https://nomad-lab.eu/prod/v1/develop/docs/howto/plugins/apps.html" target="_blank">NOMAD documentation on developing app plugins</a>). A concrete example on NOMAD Central is the <a href="https://nomad-lab.eu/prod/v1/gui/search/solarcells" target="_blank">Solar Cell search app</a>.</p>
 
               
             </article>
