@@ -1,5 +1,5 @@
 # NOMAD Oasis Maintenance Guide (LUH Deployment)
-<span style="display: block; margin-top: -0.55em; margin-bottom: 0.45em; font-size: 1.150em; color: gray;"><em>Created by</em> <img src="assets/glaide_logo_long_white.png" alt="Glaide logo" style="height: 1.986em; vertical-align: middle;" /></span>
+<span style="display: block; margin-top: -0.55em; margin-bottom: 0.45em; font-size: 1.150em; color: gray;"><em>Created by</em> <a href="https://www.glaidedata.com/" target="_blank" rel="noopener"><img src="assets/glaide_logo_long_white.png" alt="Glaide logo" style="height: 1.986em; vertical-align: middle;" /></a></span>
 
 This document describes the operational and maintenance procedures for the NOMAD Oasis instance deployed on the LUH server. It covers updating software components, managing images, handling certificates, applying configuration changes, and performing routine system checks.
 

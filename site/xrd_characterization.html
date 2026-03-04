@@ -85,7 +85,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="https://www.glaidedata.com/" title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
+    <a href="https://nomad.pci.uni-hannover.de/nomad-oasis/gui/about/information" title="Documentation" class="md-header__button md-logo" aria-label="Documentation" data-md-component="logo">
       
   <img src="assets/nomad-logo.png" alt="logo">
 
@@ -182,7 +182,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="https://www.glaidedata.com/" title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
+    <a href="https://nomad.pci.uni-hannover.de/nomad-oasis/gui/about/information" title="Documentation" class="md-nav__button md-logo" aria-label="Documentation" data-md-component="logo">
       
   <img src="assets/nomad-logo.png" alt="logo">
 
@@ -549,15 +549,14 @@
 <h1 id="xrd-characterization">XRD Characterization<a class="headerlink" href="#xrd-characterization" title="Permanent link">&para;</a></h1>
 <p>Once our ceramic is sintered, we characterize its phase composition using X-Ray Diffraction (XRD). In this step, we use NOMAD's automated parsers to extract data directly from the raw instrument files.</p>
 <h2 id="1-uploading-raw-data">1. Uploading Raw Data<a class="headerlink" href="#1-uploading-raw-data" title="Permanent link">&para;</a></h2>
-<p>On the <strong>Your uploads</strong> page, upload the Bruker <code>.RAW</code> file by dragging and dropping it into your working upload.</p>
-<p><a class="md-button nomad-button md-button--primary" href="assets/TwoTheta_scan_scrambled.raw">⬇️ Download Example XRD .RAW File</a></p>
+<p>Starting from our container Experiment Upload, upload the Bruker <code>.RAW</code> file.</p>
+<p><a class="md-button nomad-button md-button--primary" href="assets/HeOx-1001-nsp-sps-900C-10min-01-poliert_exported.raw">⬇️ Download Example XRD .RAW File</a></p>
 <h2 id="2-exploring-parsed-data">2. Exploring Parsed Data<a class="headerlink" href="#2-exploring-parsed-data" title="Permanent link">&para;</a></h2>
-<p>NOMAD will automatically recognize the <code>.RAW</code> extension and trigger the built-in XRD parser. Click on the generated entry to see the extracted diffractogram and metadata visualized automatically.</p>
+<p>NOMAD will automatically recognize the <code>.RAW</code> extension and trigger the built-in XRD parser. Click the arrow next to the generated entry to access the <strong>Overview</strong> page. Explore this page and also the <strong>DATA</strong> page to investigate the parsed data and corresponding features (e.g., plots).</p>
 <h2 id="3-linking-the-data">3. Linking the Data<a class="headerlink" href="#3-linking-the-data" title="Permanent link">&para;</a></h2>
-<p>To ensure FAIR tracking, we must link this measurement to our physical sample and the broader experiment.</p>
 <ul>
-<li><strong>Sample Reference:</strong> In the XRD entry (<strong>DATA</strong> tab), set the sample link in <code>samples</code> (or <code>Sample</code>) to the post-sintering ceramic sample created at the end of <strong>d. Sintering Process</strong>.</li>
-<li><strong>Instrument Reference (if available):</strong> In <code>instruments</code>, add/select the instrument used for this XRD measurement.</li>
+<li><strong>Sample Reference:</strong> In the XRD entry (<strong>DATA</strong> tab), a sample is automatically created under <code>samples</code>. Link this to the ceramic sample that we created using the edit (pencil) icon in the <code>composite system reference</code> field.</li>
+<li><strong>Instrument Reference:</strong> Click the + next to <code>instruments</code>, add/select the instrument used for this XRD measurement from your Instrument Inventory entries.</li>
 <li><strong>Experiment Reference:</strong> In your <strong>Experiment ELN</strong> (<strong>DATA</strong> tab), open <code>steps</code> and add this XRD entry as a step reference.</li>
 </ul>
 

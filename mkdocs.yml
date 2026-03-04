@@ -71,7 +71,7 @@ markdown_extensions:
 
 extra:
   generator: false
-  homepage: https://www.glaidedata.com/
+  homepage: https://nomad.pci.uni-hannover.de/nomad-oasis/gui/about/information
   icon:
     repo: fontawesome/brands/github
   footer: |
